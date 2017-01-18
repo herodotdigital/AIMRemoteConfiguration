@@ -1,0 +1,13 @@
+{
+	"colors": {
+		"background": "#000000",
+		"darkMain": "#29160F",
+		"lightMain": "#FFFFFF",
+		"textOnBackground": "#29160F",
+		"inactive": "#908989",
+		"active": "#F64D0A"
+	},
+    "patterns":{
+        "background":"images\/pattern.png"
+    }
+}

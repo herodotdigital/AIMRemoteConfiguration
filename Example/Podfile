@@ -1,0 +1,22 @@
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+source 'https://github.com/CocoaPods/Specs.git'
+
+def mainPods
+	pod 'libextobjc'
+end
+
+def podsForTesting
+  pod 'OCMockito', '~> 2.0'
+  pod 'OHHTTPStubs'
+end
+
+target "RemoteConfiguration" do
+    mainPods();
+end
+
+target "RemoteConfigurationTests" do
+
+    podsForTesting();
+end
