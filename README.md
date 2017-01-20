@@ -94,3 +94,6 @@ and import
 #Example
 
 Check folder `Example` for a simple application with `AIMRemoteConfiguration` integrated.
+
+
+<img src="https://allinmobile.github.io/AIMRemoteConfiguration/dune.gif">
