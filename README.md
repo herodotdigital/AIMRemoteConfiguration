@@ -95,5 +95,6 @@ and import
 
 Check folder `Example` for a simple application with `AIMRemoteConfiguration` integrated.
 
+[![Check the full video](https://allinmobile.github.io/AIMRemoteConfiguration/dune.gif)](https://www.youtube.com/watch?v=77aM3vn4BvQ)
 
-<img src="https://allinmobile.github.io/AIMRemoteConfiguration/dune.gif">
+
