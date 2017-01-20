@@ -11,7 +11,6 @@
 #import "NSDictionary+safeValue.h"
 #import "UIColor+HexString.h"
 #import "CompleteGroup.h"
-//#import <AFNetworking.h>
 #import "UIImage+loadFromData.h"
 #import "JSONDocumentsProvider.h"
 #import "EXTScope.h"
@@ -181,7 +180,6 @@ static NSString * const kPatternKeyFormat = @"patterns.%@";
 - (instancetype)initWithLocalName:(NSString *)fileName remote:(NSString *)url{
     self = [super init];
     self.fetchThemeApiRequest = [[ConfigurableApiRequest alloc] initWithPath:url];
-//    self.fetchThemeApiRequest.cachePolicy = CachePolicyIgnoreCache;
     @weakify(self);
     self.fetchThemeApiRequest.success = ^(NSDictionary *response) {
         @strongify(self);

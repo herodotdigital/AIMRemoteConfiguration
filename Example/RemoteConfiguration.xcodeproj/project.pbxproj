@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		673028AEE6D530F203043DDB /* libPods-RemoteConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F783A7926342DFEE740B7AB /* libPods-RemoteConfiguration.a */; };
 		B577A55A8BFBCB1153BBA726 /* libPods-RemoteConfigurationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC6770A3BC4FE04B5DC29E8 /* libPods-RemoteConfigurationTests.a */; };
+		D976CA331E30F71B00726FD3 /* UIColor+list.m in Sources */ = {isa = PBXBuildFile; fileRef = D976CA321E30F71B00726FD3 /* UIColor+list.m */; };
+		D976CA361E313B0F00726FD3 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D976CA341E313B0F00726FD3 /* iTunesArtwork@2x.png */; };
+		D976CA371E313B0F00726FD3 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D976CA351E313B0F00726FD3 /* iTunesArtwork@3x.png */; };
 		D9E90A901E2FC52800B83C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E90A8F1E2FC52800B83C91 /* main.m */; };
 		D9E90A931E2FC52800B83C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E90A921E2FC52800B83C91 /* AppDelegate.m */; };
 		D9E90A961E2FC52800B83C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E90A951E2FC52800B83C91 /* ViewController.m */; };
@@ -59,7 +62,11 @@
 		1F965BF2FBEDEC98DE01B784 /* Pods-RemoteConfiguration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteConfiguration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteConfiguration/Pods-RemoteConfiguration.debug.xcconfig"; sourceTree = "<group>"; };
 		3DC6770A3BC4FE04B5DC29E8 /* libPods-RemoteConfigurationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RemoteConfigurationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEA74A593B56A7E0833EA34 /* Pods-RemoteConfigurationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteConfigurationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteConfigurationTests/Pods-RemoteConfigurationTests.release.xcconfig"; sourceTree = "<group>"; };
-		D9E90A8B1E2FC52800B83C91 /* RemoteConfiguration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteConfiguration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D976CA311E30F71B00726FD3 /* UIColor+list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+list.h"; sourceTree = "<group>"; };
+		D976CA321E30F71B00726FD3 /* UIColor+list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+list.m"; sourceTree = "<group>"; };
+		D976CA341E313B0F00726FD3 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		D976CA351E313B0F00726FD3 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		D9E90A8B1E2FC52800B83C91 /* Dune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E90A8F1E2FC52800B83C91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9E90A911E2FC52800B83C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9E90A921E2FC52800B83C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,7 +173,7 @@
 		D9E90A8C1E2FC52800B83C91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9E90A8B1E2FC52800B83C91 /* RemoteConfiguration.app */,
+				D9E90A8B1E2FC52800B83C91 /* Dune.app */,
 				D9E90AA41E2FC52800B83C91 /* RemoteConfigurationTests.xctest */,
 			);
 			name = Products;
@@ -177,10 +184,14 @@
 			children = (
 				D9E90A911E2FC52800B83C91 /* AppDelegate.h */,
 				D9E90A921E2FC52800B83C91 /* AppDelegate.m */,
+				D976CA311E30F71B00726FD3 /* UIColor+list.h */,
+				D976CA321E30F71B00726FD3 /* UIColor+list.m */,
 				D9E90A941E2FC52800B83C91 /* ViewController.h */,
 				D9E90A951E2FC52800B83C91 /* ViewController.m */,
 				D9E90A971E2FC52800B83C91 /* Main.storyboard */,
 				D9E90A9A1E2FC52800B83C91 /* Assets.xcassets */,
+				D976CA341E313B0F00726FD3 /* iTunesArtwork@2x.png */,
+				D976CA351E313B0F00726FD3 /* iTunesArtwork@3x.png */,
 				D9E90A9C1E2FC52800B83C91 /* LaunchScreen.storyboard */,
 				D9E90A9F1E2FC52800B83C91 /* Info.plist */,
 				D9E90AC21E2FC94F00B83C91 /* theme.json */,
@@ -270,7 +281,7 @@
 			);
 			name = RemoteConfiguration;
 			productName = RemoteConfiguration;
-			productReference = D9E90A8B1E2FC52800B83C91 /* RemoteConfiguration.app */;
+			productReference = D9E90A8B1E2FC52800B83C91 /* Dune.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D9E90AA31E2FC52800B83C91 /* RemoteConfigurationTests */ = {
@@ -341,8 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E90A9E1E2FC52800B83C91 /* LaunchScreen.storyboard in Resources */,
+				D976CA361E313B0F00726FD3 /* iTunesArtwork@2x.png in Resources */,
 				D9E90AC51E2FCD5500B83C91 /* theme.json in Resources */,
 				D9E90A9B1E2FC52800B83C91 /* Assets.xcassets in Resources */,
+				D976CA371E313B0F00726FD3 /* iTunesArtwork@3x.png in Resources */,
 				D9E90A991E2FC52800B83C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +475,7 @@
 				D9E90A961E2FC52800B83C91 /* ViewController.m in Sources */,
 				D9E90AEE1E2FD7FC00B83C91 /* NSDictionary+safeValue.m in Sources */,
 				D9E90A931E2FC52800B83C91 /* AppDelegate.m in Sources */,
+				D976CA331E30F71B00726FD3 /* UIColor+list.m in Sources */,
 				D9E90AC11E2FC7A700B83C91 /* JSONProvider.m in Sources */,
 				D9E90ABE1E2FC7A700B83C91 /* JSONBundleProvider.m in Sources */,
 				D9E90A901E2FC52800B83C91 /* main.m in Sources */,
@@ -621,7 +635,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.allinmobile.RemoteConfiguration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dune;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -635,7 +650,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.allinmobile.RemoteConfiguration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dune;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

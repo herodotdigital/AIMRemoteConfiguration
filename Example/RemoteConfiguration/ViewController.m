@@ -7,22 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+list.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *quotation;
+@property (weak, nonatomic) IBOutlet UILabel *citation;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view.backgroundColor = [UIColor backgroundColor];
+    self.quotation.textColor = [UIColor textColor];
+    self.citation.textColor = [UIColor textColor];
 }
 
 

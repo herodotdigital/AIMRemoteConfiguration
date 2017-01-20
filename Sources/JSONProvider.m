@@ -24,7 +24,7 @@
     NSData *data = [NSData dataWithContentsOfURL:url options:0 error:&error];
     
     if (!data) {
-        NSLog(@"%@", error);
+//        NSLog(@"%@", error);
         return nil;
     }
     
