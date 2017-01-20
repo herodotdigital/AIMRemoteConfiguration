@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EXTConcreteProtocol.h"
+#import <libextobjc/EXTConcreteProtocol.h>
 
 
 @protocol JSONProvider <NSObject>
