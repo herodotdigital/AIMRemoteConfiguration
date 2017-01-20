@@ -42,6 +42,6 @@
 	<key>themeFileName</key>
 	<string>theme</string>
 	<key>themeRemotePath</key>
-	<string>https://allinmobile.github.io/RemoteConfiguration/remote_theme.json</string>
+	<string>https://allinmobile.github.io/AIMRemoteConfiguration/remote_theme.json</string>
 </dict>
 </plist>
