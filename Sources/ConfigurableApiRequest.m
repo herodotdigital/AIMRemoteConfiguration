@@ -21,7 +21,7 @@
 }
 
 - (void)get {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.path]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.path] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:20];
     NSURLSessionDataTask* task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             if (self.failure) {
