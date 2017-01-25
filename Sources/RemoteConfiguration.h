@@ -24,6 +24,10 @@
 + (instancetype)sharedInstace;
 + (UIColor *)colorWithName:(NSString *)name;
 + (UIColor *)patternWithName:(NSString *)key;
+
++ (void)useFutureConfiguration;
++ (void)update;
+
 //UNAVAILABLE
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

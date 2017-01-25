@@ -131,7 +131,7 @@ static NSString * const kPatternKeyFormat = @"patterns.%@";
 @property (copy, nonatomic) CompleteBlock completeFetch;
 
 - (instancetype)initWithLocalName:(NSString *)fileName remote:(NSString *)url;
-
+- (void)update;
 @end
 
 @interface RemoteConfiguration ()
@@ -173,6 +173,20 @@ static NSString * const kPatternKeyFormat = @"patterns.%@";
     return [[self sharedInstace] patternWithName:key];
 }
 
++ (void)useFutureConfiguration {
+    RemoteConfiguration *config = [self sharedInstace];
+    if ([config.future.value count] > 0) {
+        config.value = config.future.value;
+    }
+}
+
++ (void)update {
+    RemoteConfiguration *config = [self sharedInstace];
+    FutureConfiguration *future = (FutureConfiguration *)config.future;
+    [future update];
+}
+
+
 @end
 
 @implementation FutureConfiguration
@@ -194,8 +208,12 @@ static NSString * const kPatternKeyFormat = @"patterns.%@";
         @strongify(self);
         self.value = nil;
     };
-    [self.fetchThemeApiRequest get];
+    [self update];
     return self;
+}
+
+- (void)update {
+    [self.fetchThemeApiRequest get];
 }
 
 - (void)fetchPatterns:(NSDictionary *)response {

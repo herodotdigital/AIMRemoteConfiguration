@@ -9,8 +9,10 @@
 #import "AppDelegate.h"
 #import "RemoteConfiguration.h"
 
-@interface AppDelegate ()
+static const NSTimeInterval BackgoundTimeNeededToUpdateConfig = 10;
 
+@interface AppDelegate ()
+@property (strong, nonatomic) NSDate *resignActiveDate;
 @end
 
 @implementation AppDelegate
@@ -25,6 +27,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    self.resignActiveDate = [NSDate date];
 }
 
 
@@ -36,6 +39,21 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    NSTimeInterval backgroundLength = [[NSDate date] timeIntervalSinceDate:self.resignActiveDate];
+    printf("resign active date:%s, diff: %f\n", [self.resignActiveDate description].UTF8String, backgroundLength);
+    if(backgroundLength > BackgoundTimeNeededToUpdateConfig) {
+        [self reloadConfiguration];
+    }
+}
+
+- (void)reloadConfiguration {
+    [RemoteConfiguration useFutureConfiguration];
+    [RemoteConfiguration update];
+
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:bundle];
+    UIViewController *start = [storyboard instantiateInitialViewController];
+    self.window.rootViewController = start;
 }
 
 
