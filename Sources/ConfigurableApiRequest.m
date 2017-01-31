@@ -25,14 +25,18 @@
     NSURLSessionDataTask* task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             if (self.failure) {
-                self.failure(error);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self.failure(error);
+                });
             }
             return;
         }
         if (error == nil) {
             id jsonRespone = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
             if (self.success) {
-                self.success(jsonRespone);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    self.success(jsonRespone);
+                });
             }
         }
     }];
