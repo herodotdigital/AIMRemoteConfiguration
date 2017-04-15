@@ -1,8 +1,8 @@
-#AIMRemoteConfiguration
+# AIMRemoteConfiguration
 
 AIMRemoteConfiguration allows you to define a list of colors used in the app in JSON file and fetch it from the internet. It works in an asynchronous way. The app starts normally, fetches all data in the background, and applies all styles on next start, so the user doesn't see any loader at the beginning.
 
-#Usage
+# Usage
 
 - Add a category for `UIColor`:
 ```objective-c
@@ -76,7 +76,7 @@ AIMRemoteConfiguration allows you to define a list of colors used in the app in 
 @end
 ```
 
-#Installation
+# Installation
 
 Use the [CocoaPods](http://github.com/CocoaPods/CocoaPods).
 
